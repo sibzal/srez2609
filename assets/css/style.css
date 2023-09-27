@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    /* контейнер */
+}
+
+/* шапка */
+header{
+    padding: 30px;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+/* шапка */
+
+/* блок hot topics */
+.hot_topics_block{
+    padding-bottom: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.wrapper_topics{
+    display: flex;
+    gap: 30px;
+}
+span{
+    font-size: 36px;
+}
+.text{
+    font-size: 18px;
+    color: #444444;
+    line-height: 33px;
+}
+h1{
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 25px;
+}
+
+/* блок hot topics */
+
+/* блок с последними новостями */
+.news{
+    padding-bottom: 70px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+h2{
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 25px;
+}
+.news_item{
+    max-width: 270px;
+}
+.news-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.date, .place{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #949494;
+}
+.wrapper_elements_news{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 10px;
+}
+.btns_wrapper{
+    display: flex;
+    gap: 18px;
+}
+.date_and_place{
+    display: flex;
+    gap: 16px;
+}
+/* блок с последними новостями */
+
+/* блок с формой добавления */
+.block_add_news{
+    background: #F8F8F8;
+    padding: 70px 30px;
+
+}
+h4{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 75px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    width: 300px;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: 1px solid #121221;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.btn_add{
+    width: 300px;
+    height: 50px;
+    border: none;
+    background: #5E5BFF;
+    color: #F8F8F8;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+}
+.end-text{
+    color: #949494;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 75px;
+}
+/* блок с формой добавления */
+
+.error{
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 5px;
+}
+
+/* адаптация */
+@media (max-width: 1100px ) {
+    .wrapper_topics{
+        flex-direction: column;
+    }
+    .photo1{
+        max-width: 100%;
+    }
+}
+/* адаптация */
+
